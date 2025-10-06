@@ -12,4 +12,5 @@ training_df = chicago_taxi_dataset.loc[
 print("Read dataset completed successfully.")
 print("Total number of rows: {0}\n\n".format(len(training_df.index)))
 training_df.head(200)
-training_df.describe(include="all")
+max_fares = training_df["FARE"].max()
+print(max_fares)
